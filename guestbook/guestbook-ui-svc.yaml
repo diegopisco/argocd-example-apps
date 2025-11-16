@@ -6,7 +6,6 @@ spec:
   ports:
   - port: 80
     targetPort: 80
-    nodePort: 30007 # Optional, otherwise a random port in range 30000-32767 is assigned
-  type: NodePort    
+  type: LoadBalancer    
   selector:
     app: guestbook-ui
